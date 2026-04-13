@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="glass_radius" format="dimension" />
+    <attr name="glass_blur" format="dimension" />
+    <attr name="glass_thickness" format="dimension" />
+    <attr name="glass_intensity" format="float" />
+    <attr name="glass_foreground_color" format="color" />
+    <attr name="glass_active_color" format="color" />
+    <attr name="glass_inactive_color" format="color" />
+    <attr name="glass_indicator_color" format="color" />
+    <attr name="glass_text" format="string" />
+    <attr name="glass_text_color" format="color" />
+    <attr name="glass_text_size" format="dimension" />
+    <attr name="glass_scale_on_press" format="float" />
+
+    <declare-styleable name="GlassView">
+        <attr name="glass_radius" />
+        <attr name="glass_blur" />
+        <attr name="glass_thickness" />
+        <attr name="glass_intensity" />
+        <attr name="glass_foreground_color" />
+    </declare-styleable>
+
+    <declare-styleable name="GlassPanel">
+        <attr name="glass_radius" />
+        <attr name="glass_blur" />
+        <attr name="glass_thickness" />
+        <attr name="glass_intensity" />
+        <attr name="glass_foreground_color" />
+    </declare-styleable>
+
+    <declare-styleable name="GlassButton">
+        <attr name="glass_radius" />
+        <attr name="glass_blur" />
+        <attr name="glass_thickness" />
+        <attr name="glass_intensity" />
+        <attr name="glass_foreground_color" />
+        <attr name="glass_text" />
+        <attr name="glass_text_color" />
+        <attr name="glass_text_size" />
+        <attr name="glass_scale_on_press" />
+    </declare-styleable>
+
+    <declare-styleable name="GlassNavigationBar">
+        <attr name="glass_radius" />
+        <attr name="glass_blur" />
+        <attr name="glass_thickness" />
+        <attr name="glass_intensity" />
+        <attr name="glass_foreground_color" />
+        <attr name="glass_active_color" />
+        <attr name="glass_inactive_color" />
+        <attr name="glass_indicator_color" />
+    </declare-styleable>
+
+</resources>

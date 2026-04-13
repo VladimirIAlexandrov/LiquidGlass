@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.liquidglass.ui.GlassHostLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/host_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        tools:listitem="@layout/item_color"
+        android:paddingBottom="140dp" />
+
+    <com.liquidglass.ui.GlassButton
+        android:id="@+id/glass_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:glass_radius="28dp"
+        app:glass_thickness="10dp"
+        app:glass_text="Liquid Glass Button"
+        app:glass_text_color="#FFFFFF"
+        app:glass_text_size="16sp" />
+
+    <com.liquidglass.ui.GlassPanel
+        android:id="@+id/glass_panel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="102dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:glass_radius="28dp"
+        app:glass_blur="8dp"
+        app:glass_thickness="10dp"
+        app:glass_intensity="0.75"
+        app:glass_foreground_color="#18FFFFFF">
+
+        <TextView
+            android:id="@+id/panel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="helloy"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/panel_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical|start"
+            android:layout_marginStart="16dp"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <Switch
+            android:id="@+id/glass_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="16dp" />
+
+    </com.liquidglass.ui.GlassPanel>
+
+    <com.liquidglass.ui.GlassNavigationBar
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:glass_radius="32dp"
+        app:glass_thickness="10dp"
+        app:glass_blur="8dp"
+        app:glass_intensity="0.75"
+        app:glass_foreground_color="#18FFFFFF"
+        app:glass_active_color="#3B7A09"
+        app:glass_inactive_color="#217597"
+        app:glass_indicator_color="#84A5D5DB" />
+
+</com.liquidglass.ui.GlassHostLayout>

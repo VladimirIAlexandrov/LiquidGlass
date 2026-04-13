@@ -1,0 +1,20 @@
+# IDE
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+build/
+*/build/
+
+# Local
+local.properties
+
+# Android
+*.apk
+*.aab
+*.dex
+
+# OS
+.DS_Store
+Thumbs.db
