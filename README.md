@@ -5,14 +5,13 @@ Inspired by the blur pipeline from Telegram — built as a standalone, zero-depe
 
 ![API](https://img.shields.io/badge/minSdk-29-green)
 ![API](https://img.shields.io/badge/fullEffect-API%2033%2B-blue)
-![JitPack](https://jitpack.io/v/VladimirIAlexandrov/LiquidGlass.svg)
+[![JitPack](https://jitpack.io/v/VladimirIAlexandrov/LiquidGlass.svg)](https://jitpack.io/#VladimirIAlexandrov/LiquidGlass)
 
 ---
 
-## ✨ What it looks like
+## ✨ Preview
 
-A glass panel with real lens distortion, blur and refraction — not just a `backdropFilter`.  
-The effect is built on top of Android's `RenderNode` + AGSL `RuntimeShader` pipeline.
+https://github.com/user-attachments/assets/6336c68c-6cea-496a-8e34-009f373be6e2
 
 ---
 
@@ -32,9 +31,17 @@ dependencyResolutionManagement {
 
 ### 2. Add dependency
 
+**Kotlin DSL** (`build.gradle.kts`):
 ```kotlin
 dependencies {
     implementation("com.github.VladimirIAlexandrov:LiquidGlass:1.0.0")
+}
+```
+
+**Groovy** (`build.gradle`):
+```groovy
+dependencies {
+    implementation 'com.github.VladimirIAlexandrov:LiquidGlass:1.0.0'
 }
 ```
 
@@ -110,9 +117,9 @@ A bottom navigation bar with animated tab selection and liquid glass background.
 
 ```kotlin
 val nav = findViewById<GlassNavigationBar>(R.id.nav_bar)
-nav.addTab(R.drawable.ic_home,     "Home")
-nav.addTab(R.drawable.ic_search,   "Search")
-nav.addTab(R.drawable.ic_profile,  "Profile")
+nav.addTab(R.drawable.ic_home,    "Home")
+nav.addTab(R.drawable.ic_search,  "Search")
+nav.addTab(R.drawable.ic_profile, "Profile")
 
 nav.onTabSelected = { index ->
     // handle tab switch
@@ -159,3 +166,20 @@ recycler.addOnScrollListener(object : RecyclerView.OnScrollListener() {
 
 ---
 
+## 📄 License
+
+```
+MIT License
+
+Copyright (c) 2025 Vladimir Alexandrov
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+```
