@@ -16,6 +16,7 @@ https://github.com/user-attachments/assets/6336c68c-6cea-496a-8e34-009f373be6e2
 ---
 
 ## 🚀 Setup
+[![](https://jitpack.io/v/VladimirIAlexandrov/LiquidGlass.svg)](https://jitpack.io/#VladimirIAlexandrov/LiquidGlass)
 
 ### 1. Add JitPack to `settings.gradle.kts`
 
